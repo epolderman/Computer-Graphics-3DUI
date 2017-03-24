@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{57AEC5AD-DF0E-4013-B97B-54244175D068}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MyGraphicsGL</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Configuration)\Tmp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\CPlusPlusOpenGL\Middleware\assimp\include;Z:\CPlusPlusOpenGL\Middleware\Simple OpenGL Image Library\src;Z:\CPlusPlusOpenGL\Middleware\glm;Z:\CPlusPlusOpenGL\Middleware\Qt\include;Z:\CPlusPlusOpenGL\Middleware\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Z:\CPlusPlusOpenGL\Middleware\assimp\lib;Z:\CPlusPlusOpenGL\Middleware\Simple OpenGL Image Library\lib;Z:\CPlusPlusOpenGL\Middleware\Qt\lib;Z:\CPlusPlusOpenGL\Middleware\glew\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp-vc120-mt.lib;soil.lib;opengl32.lib;glew32d.lib;QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="DebugSlider.cpp" />
+    <ClCompile Include="DebugSlider_moc.cpp" />
+    <ClCompile Include="FrameBuffer.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="myGL.cpp" />
+    <ClCompile Include="obj_loader.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="ShaderCode.cpp" />
+    <ClCompile Include="ShapeGenerator.cpp" />
+    <ClCompile Include="SkyBox.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Water.cpp" />
+    <ClCompile Include="Widget.cpp" />
+    <ClCompile Include="Widget_Moc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ComplexMesh.h" />
+    <ClInclude Include="DebugSlider.h" />
+    <ClInclude Include="FrameBuffer.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="ModelData.h" />
+    <ClInclude Include="myGL.h" />
+    <ClInclude Include="obj_loader.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="ShapeData.h" />
+    <ClInclude Include="ShapeGenerator.h" />
+    <ClInclude Include="SkyBox.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="Water.h" />
+    <ClInclude Include="Widget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FragmentShaderBlinn.glsl" />
+    <None Include="FragmentShaderMapMat.glsl" />
+    <None Include="FragmentShaderMappingShader.glsl" />
+    <None Include="FragmentShaderMaterial.glsl" />
+    <None Include="FragmentShaderSnow.glsl" />
+    <None Include="FragmentShaderModel.glsl" />
+    <None Include="FragmentShaderQuad.glsl" />
+    <None Include="FragmentShaderReflection.glsl" />
+    <None Include="FragmentShaderSky.glsl" />
+    <None Include="FragmentShaderTexture.glsl" />
+    <None Include="FragmentShaderTextureModel.glsl" />
+    <None Include="FragmentShaderWater.glsl" />
+    <None Include="VertexShaderBlinn.glsl" />
+    <None Include="VertexShaderMapMat.glsl" />
+    <None Include="VertexShaderMappingShader.glsl" />
+    <None Include="VertexShaderMaterial.glsl" />
+    <None Include="VertexShaderSnow.glsl" />
+    <None Include="VertexShaderModel.glsl" />
+    <None Include="VertexShaderQuad.glsl" />
+    <None Include="VertexShaderReflection.glsl" />
+    <None Include="VertexShaderSky.glsl" />
+    <None Include="VertexShaderTexture.glsl" />
+    <None Include="VertexShaderTextureModel.glsl" />
+    <None Include="VertexShaderWater.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="8151992681_a04c1c4302.jpg" />
+    <Image Include="arm_dif.png" />
+    <Image Include="arm_showroom_ddn.png" />
+    <Image Include="arm_showroom_spec.png" />
+    <Image Include="back.png" />
+    <Image Include="bback.png" />
+    <Image Include="bbottom.png" />
+    <Image Include="bfront.png" />
+    <Image Include="bleft.png" />
+    <Image Include="body_dif.png" />
+    <Image Include="body_showroom_ddn.png" />
+    <Image Include="body_showroom_spec.png" />
+    <Image Include="bottom.png" />
+    <Image Include="bricks.jpg" />
+    <Image Include="bright.png" />
+    <Image Include="btop.png" />
+    <Image Include="buttBottom.png" />
+    <Image Include="C:\Users\eze\Desktop\bback.png" />
+    <Image Include="C:\Users\eze\Desktop\bbottom.png" />
+    <Image Include="C:\Users\eze\Desktop\bfront.png" />
+    <Image Include="C:\Users\eze\Desktop\bleft.png" />
+    <Image Include="C:\Users\eze\Desktop\bright.png" />
+    <Image Include="C:\Users\eze\Desktop\btop.png" />
+    <Image Include="Channel_Default Material_Diffuse.png" />
+    <Image Include="front.png" />
+    <Image Include="glass_ddn.png" />
+    <Image Include="glass_dif.png" />
+    <Image Include="hand_dif.png" />
+    <Image Include="hand_showroom_ddn.png" />
+    <Image Include="hand_showroom_spec.png" />
+    <Image Include="helmet_diff.png" />
+    <Image Include="helmet_showroom_ddn.png" />
+    <Image Include="helmet_showroom_spec.png" />
+    <Image Include="left.png" />
+    <Image Include="leg_dif.png" />
+    <Image Include="leg_showroom_ddn.png" />
+    <Image Include="leg_showroom_spec.png" />
+    <Image Include="nback.png" />
+    <Image Include="ndown.png" />
+    <Image Include="nfront.png" />
+    <Image Include="nleft.png" />
+    <Image Include="nright.png" />
+    <Image Include="ntop.png" />
+    <Image Include="planet_serendip_1600.jpg" />
+    <Image Include="purple-micro-fiber-cloth-fabric-texture.jpg" />
+    <Image Include="purpleRock.jpg" />
+    <Image Include="right.png" />
+    <Image Include="Rock.jpg" />
+    <Image Include="SphereSurface_Color.png" />
+    <Image Include="tback.png" />
+    <Image Include="tbackr.png" />
+    <Image Include="tbottom.png" />
+    <Image Include="tdown.png" />
+    <Image Include="tfront.png" />
+    <Image Include="tleft.png" />
+    <Image Include="top.png" />
+    <Image Include="tright.png" />
+    <Image Include="ttop.png" />
+    <Image Include="vback.png" />
+    <Image Include="vdown.png" />
+    <Image Include="vfront.png" />
+    <Image Include="vleft.png" />
+    <Image Include="vright.png" />
+    <Image Include="vup.png" />
+    <Image Include="wood.png" />
+    <Image Include="yellowrock.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

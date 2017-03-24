@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="myGL.cpp" />
+    <ClCompile Include="ShapeGenerator.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget.cpp">
+      <Filter>Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugSlider.cpp">
+      <Filter>Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderCode.cpp">
+      <Filter>Shader\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugSlider_moc.cpp">
+      <Filter>Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget_Moc.cpp">
+      <Filter>Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="obj_loader.cpp">
+      <Filter>ObjectLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyBox.cpp">
+      <Filter>SkyBox</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameBuffer.cpp" />
+    <ClCompile Include="Water.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myGL.h" />
+    <ClInclude Include="Vertex.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeData.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeGenerator.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Widget.h">
+      <Filter>Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugSlider.h">
+      <Filter>Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelData.h">
+      <Filter>Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="obj_loader.h">
+      <Filter>ObjectLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyBox.h">
+      <Filter>SkyBox</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameBuffer.h" />
+    <ClInclude Include="Water.h" />
+    <ClInclude Include="ComplexMesh.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FragmentShaderTexture.glsl">
+      <Filter>Shader\ShadersTextures</Filter>
+    </None>
+    <None Include="VertexShaderTexture.glsl">
+      <Filter>Shader\ShadersTextures</Filter>
+    </None>
+    <None Include="FragmentShaderMaterial.glsl">
+      <Filter>Shader\ShaderMaterials</Filter>
+    </None>
+    <None Include="VertexShaderMaterial.glsl">
+      <Filter>Shader\ShaderMaterials</Filter>
+    </None>
+    <None Include="VertexShaderSky.glsl">
+      <Filter>Shader\ShaderSky</Filter>
+    </None>
+    <None Include="FragmentShaderSky.glsl">
+      <Filter>Shader\ShaderSky</Filter>
+    </None>
+    <None Include="VertexShaderWater.glsl">
+      <Filter>Shader\ShaderWater</Filter>
+    </None>
+    <None Include="FragmentShaderWater.glsl">
+      <Filter>Shader\ShaderWater</Filter>
+    </None>
+    <None Include="FragmentShaderReflection.glsl">
+      <Filter>Shader\ShaderReflection</Filter>
+    </None>
+    <None Include="VertexShaderReflection.glsl">
+      <Filter>Shader\ShaderReflection</Filter>
+    </None>
+    <None Include="VertexShaderModel.glsl">
+      <Filter>Shader\ShaderModel</Filter>
+    </None>
+    <None Include="FragmentShaderModel.glsl">
+      <Filter>Shader\ShaderModel</Filter>
+    </None>
+    <None Include="VertexShaderMappingShader.glsl">
+      <Filter>Shader\ShaderMappingShades</Filter>
+    </None>
+    <None Include="FragmentShaderMappingShader.glsl">
+      <Filter>Shader\ShaderMappingShades</Filter>
+    </None>
+    <None Include="FragmentShaderQuad.glsl">
+      <Filter>Shader\Random</Filter>
+    </None>
+    <None Include="VertexShaderQuad.glsl">
+      <Filter>Shader\Random</Filter>
+    </None>
+    <None Include="VertexShaderMapMat.glsl">
+      <Filter>Shader\ShaderMappingShades</Filter>
+    </None>
+    <None Include="FragmentShaderMapMat.glsl">
+      <Filter>Shader\ShaderMappingShades</Filter>
+    </None>
+    <None Include="VertexShaderBlinn.glsl">
+      <Filter>Shader\BlinnPhongShader</Filter>
+    </None>
+    <None Include="FragmentShaderBlinn.glsl">
+      <Filter>Shader\BlinnPhongShader</Filter>
+    </None>
+    <None Include="FragmentShaderSnow.glsl">
+      <Filter>Shader\ShaderMaterials</Filter>
+    </None>
+    <None Include="VertexShaderSnow.glsl">
+      <Filter>Shader\ShaderMaterials</Filter>
+    </None>
+    <None Include="FragmentShaderTextureModel.glsl">
+      <Filter>Shader\BlinnPhongShader</Filter>
+    </None>
+    <None Include="VertexShaderTextureModel.glsl">
+      <Filter>Shader\BlinnPhongShader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Primitives">
+      <UniqueIdentifier>{2308b91f-a3de-49ef-a6c7-d43c83ab21ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{20668a65-98fb-4725-8dd1-cf0ca5df223f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{514a595e-62f5-4a2a-ae1b-96d1781cba14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{2bb3ea0d-5ae6-4da5-a6c1-5fe375b389fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widgets">
+      <UniqueIdentifier>{4afceb05-80bb-4e47-9a32-80afb4cdb4ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\ShadersTextures">
+      <UniqueIdentifier>{b9b91727-3f36-4238-93fc-bbbba0f42916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\ShaderMaterials">
+      <UniqueIdentifier>{aab3c5e3-0e5e-4457-9ff3-ffd0bc8802e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Random">
+      <UniqueIdentifier>{4adb48ad-aaa7-4dde-8f44-69338fe700c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectLoader">
+      <UniqueIdentifier>{d1da713e-f222-4206-b7c1-0b08ce33e923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Textures">
+      <UniqueIdentifier>{275a0c08-1e4c-4f84-8199-d1df11300ae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{86d8b1fc-eee4-423d-9a7a-c556c308a91d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\ShaderSky">
+      <UniqueIdentifier>{843e16fb-fe1a-4539-82ac-5df641ac79cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SkyBox">
+      <UniqueIdentifier>{09553f2e-45c4-4c07-b23e-dd98154ac891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Textures\Images">
+      <UniqueIdentifier>{9e0b4f10-8e38-4d37-b4ce-214b348c9463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\ShaderWater">
+      <UniqueIdentifier>{01239826-f66b-4105-ac89-9e372e6f4a1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Water">
+      <UniqueIdentifier>{7555c128-e0f9-4c26-8863-a801d6be3e31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\ShaderReflection">
+      <UniqueIdentifier>{c4623106-b03b-4337-b787-2b2ef32145e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\ShaderModel">
+      <UniqueIdentifier>{9660b0ef-0bf5-4d67-98cb-107632ed7d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\ShaderMappingShades">
+      <UniqueIdentifier>{d52bf604-1f21-4b69-a4bc-b71fb37b17de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\BlinnPhongShader">
+      <UniqueIdentifier>{d2799400-f4ba-46ae-8790-8f3c8cb72b7f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="back.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="bottom.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="bricks.jpg">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="front.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="left.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="right.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="top.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="buttBottom.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="yellowrock.jpg">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="Rock.jpg">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="purpleRock.jpg">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="leg_showroom_spec.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="glass_ddn.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="glass_dif.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="hand_dif.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="hand_showroom_ddn.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="hand_showroom_spec.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="helmet_diff.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="helmet_showroom_ddn.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="helmet_showroom_spec.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="leg_dif.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="leg_showroom_ddn.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="body_showroom_spec.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="body_showroom_ddn.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="body_dif.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="arm_showroom_spec.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="arm_showroom_ddn.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="arm_dif.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="wood.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="8151992681_a04c1c4302.jpg">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="Channel_Default Material_Diffuse.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="planet_serendip_1600.jpg">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="purple-micro-fiber-cloth-fabric-texture.jpg">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="SphereSurface_Color.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="C:\Users\eze\Desktop\bback.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="C:\Users\eze\Desktop\bbottom.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="C:\Users\eze\Desktop\bfront.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="C:\Users\eze\Desktop\bleft.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="C:\Users\eze\Desktop\bright.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="C:\Users\eze\Desktop\btop.png">
+      <Filter>Textures\Images</Filter>
+    </Image>
+    <Image Include="bfront.png" />
+    <Image Include="bbottom.png" />
+    <Image Include="bback.png" />
+    <Image Include="btop.png" />
+    <Image Include="bright.png" />
+    <Image Include="bleft.png" />
+    <Image Include="ttop.png" />
+    <Image Include="tright.png" />
+    <Image Include="tleft.png" />
+    <Image Include="tfront.png" />
+    <Image Include="tbottom.png" />
+    <Image Include="tback.png" />
+    <Image Include="tbackr.png" />
+    <Image Include="tdown.png" />
+    <Image Include="nback.png" />
+    <Image Include="ndown.png" />
+    <Image Include="nfront.png" />
+    <Image Include="nleft.png" />
+    <Image Include="nright.png" />
+    <Image Include="ntop.png" />
+    <Image Include="vup.png" />
+    <Image Include="vfront.png" />
+    <Image Include="vleft.png" />
+    <Image Include="vright.png" />
+    <Image Include="vdown.png" />
+    <Image Include="vback.png" />
+  </ItemGroup>
+</Project>
